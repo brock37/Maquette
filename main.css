@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*****HEADER*******/
+
+header{
+  background: #3480be;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.1em 10em 0.1em 10em;
+}
+
+header ul li a{
+	color: white;
+}
+
+/*******ARTICLE*******/
+article a{
+	color:#3480be;
+	border: 1px solid;
+	padding: 1em;
+	margin: auto 20px; 
+	border-radius: 5px;
+	background: white;
+}
+article a:hover{
+	border: 1px solid;
+	padding: 1em;
+	border-radius: 5px;
+	background: #3480be;
+	color:white;
+}
+
+/*****BLOC DE PRESENTATION******/
+
+#presentation{
+  background: url('../img/bg.gif');
+  height: 483px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+#presentation h1, #presentation h2{
+  max-width: 1180px;
+  font-family: 'Raleway', sans-serif;
+
+  color: #3480be;
+}
+#presentation h1{
+  font-size: 3em;
+}
+
+#presentation h2{
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+#presentation p{
+  max-width: 900px;
+  margin-bottom: 2em;
+}
+
+/******BLOC DE PROJETS*****/
+#projets{
+  background: #333333;
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+#projets img{
+  width: 50%;
+  height:100%;
+}
+
+#projets .text{
+  display: flex;
+  align-content: space-evenly;
+
+}
+
+#projets .texte h2{
+  color: #235680;
+}
+
+#projets p{
+	margin-bottom: 2em;
+}
+#projets hr{
+	color: white;
+	width: 350px; 	
+}
+
+/******CLIENTS*********/
+#clients ul{
+	height: 150px;
+	align-items: center;
+	justify-content: space-evenly;
+	
+}
+
+/******FOOTER****/
+footer{
+	background: #3480be;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
