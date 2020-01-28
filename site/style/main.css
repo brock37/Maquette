@@ -7,6 +7,7 @@ ul{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 
 a{
@@ -25,17 +26,25 @@ header{
   padding: 0.1em 10em 0.1em 10em;
 }
 
-header ul li{
-  margin-left: 1em;
+header ul li a{
+	color: white;
 }
 
 /*******ARTICLE*******/
-article{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+article a{
+	color:#3480be;
+	border: 1px solid;
+	padding: 1em;
+	margin: auto 20px; 
+	border-radius: 5px;
+	background: white;
+}
+article a:hover{
+	border: 1px solid;
+	padding: 1em;
+	border-radius: 5px;
+	background: #3480be;
+	color:white;
 }
 
 /*****BLOC DE PRESENTATION******/
@@ -43,7 +52,11 @@ article{
 #presentation{
   background: url('../img/bg.gif');
   height: 483px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
 }
 #presentation h1, #presentation h2{
@@ -66,7 +79,7 @@ article{
   margin-bottom: 2em;
 }
 
-/******BLOC DE POJETS*****/
+/******BLOC DE PROJETS*****/
 #projets{
   background: #333333;
   display: flex;
@@ -75,12 +88,42 @@ article{
 }
 #projets img{
   width: 50%;
+  height:100%;
 }
 
 #projets .text{
   display: flex;
+  align-content: space-evenly;
+
 }
 
 #projets .texte h2{
   color: #235680;
+}
+
+#projets p{
+	margin-bottom: 2em;
+}
+#projets hr{
+	color: white;
+	width: 350px; 	
+}
+
+/******CLIENTS*********/
+#clients ul{
+	height: 150px;
+	align-items: center;
+	justify-content: space-evenly;
+	
+}
+
+/******FOOTER****/
+footer{
+	background: #3480be;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
